@@ -1,0 +1,42 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="wrap">
+                <h3>HOME</h3>
+                <div class="point-div">
+                    <div id="home-points" class="point-text">0</div>
+                </div>
+                
+                <div class="point-button-container">
+                    <button class="point-button" id="home-1" onclick="homeAdd1()">+1</button>
+                    <button class="point-button" id="home-2" onclick="homeAdd2()">+2</button>
+                    <button class="point-button" id="home-3" onclick="homeAdd3()">+3</button>
+                </div>
+                
+                <button class="clear-button" id="home-clear" onclick="clearHome()">Clear</button>
+                
+            </div>
+            
+            <div>
+                <h3>GUEST</h3>
+                <div class="point-div">
+                    <div id="guest-points" class="point-text">0</div>
+                </div>
+                <div class="point-button-container">
+                    <button class="point-button" id="guest-1" onclick="guestAdd1()">+1</button>
+                    <button class="point-button" id="guest-2" onclick="guestAdd2()">+2</button>
+                    <button class="point-button" id="guest-3" onclick="guestAdd3()">+3</button>
+                </div>
+                <button class="clear-button" id="home-clear" onclick="clearGuest()">Clear</button>    
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+        
+    </body>
+</html>
